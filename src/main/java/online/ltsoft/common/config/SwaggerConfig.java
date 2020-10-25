@@ -25,7 +25,7 @@ public class SwaggerConfig {
             .apiInfo(apiInfo())
             .select()
             //扫描的路径包(设置basePackage会将包下的所有被@Api标记类的所有方法作为api)
-            .apis(RequestHandlerSelectors.basePackage("online.ltsoft.common.apiService"))
+            .apis(RequestHandlerSelectors.basePackage("online.ltsoft.api.swagger"))
             .paths(PathSelectors.any())
             .build();
     }

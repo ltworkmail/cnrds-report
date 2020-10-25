@@ -18,12 +18,12 @@ public class CxfConfig {
     private ApiService apiService;
 
     @Bean
-    public ServletRegistrationBean dispatcherServlet() {
+    public ServletRegistrationBean createServletRegistrationBean() {
         return new ServletRegistrationBean(new CXFServlet(),"/api/*");
     }
 
     @Bean
-    public Endpoint userEndpoint() {
+    public Endpoint endpoint() {
         EndpointImpl endpoint = new EndpointImpl(bus, apiService);
         endpoint.publish("/apiService");
         return endpoint;

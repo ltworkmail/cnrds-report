@@ -1,4 +1,4 @@
-package online.ltsoft.common.config;
+package online.ltsoft.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -25,7 +25,7 @@ public class SwaggerConfig {
             .apiInfo(apiInfo())
             .select()
             //扫描的路径包(设置basePackage会将包下的所有被@Api标记类的所有方法作为api)
-            .apis(RequestHandlerSelectors.basePackage("online.ltsoft.api.swagger"))
+            .apis(RequestHandlerSelectors.basePackage("online.ltsoft.common.swagger"))
             .paths(PathSelectors.any())
             .build();
     }

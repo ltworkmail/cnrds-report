@@ -1,4 +1,4 @@
-package online.ltsoft.common.config;
+package online.ltsoft.config;
 
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;

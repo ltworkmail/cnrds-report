@@ -1,4 +1,4 @@
-package online.ltsoft.common.config;
+package online.ltsoft.config;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;

@@ -1,12 +1,13 @@
 package online.ltsoft.api.cxf;
 
+import online.ltsoft.common.cxf.ApiService;
 import org.springframework.stereotype.Component;
 import javax.jws.WebService;
 import java.util.HashMap;
 import java.util.Map;
 
 @Component
-@WebService(targetNamespace="http://cxf.api.ltsoft.online", endpointInterface= "online.ltsoft.api.cxf.ApiService", name="ApiService")
+@WebService(targetNamespace="http://cxf.common.ltsoft.online", endpointInterface= "online.ltsoft.common.cxf.ApiService", name="ApiService")
 public class ApiServiceImpl implements ApiService {
     @Override
     public Map<String,Object> testApi(String code) {

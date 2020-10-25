@@ -119,11 +119,11 @@
         </dependency>
 
         <!-- cxf webservice -->
-        <!--<dependency>
+        <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-spring-boot-starter-jaxws</artifactId>
-            <version>3.1.12</version>
-        </dependency>-->
+            <version>3.4.0</version>
+        </dependency>
     </dependencies>
 
     <build>

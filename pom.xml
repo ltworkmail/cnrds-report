@@ -38,11 +38,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
-        <!-- 工具类 -->
+        <!-- lotus-core -->
         <dependency>
-            <groupId>commons-beanutils</groupId>
-            <artifactId>commons-beanutils</artifactId>
+            <groupId>online.ltsoft</groupId>
+            <artifactId>lotus-core</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <!-- 工具类 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>

@@ -1,4 +1,4 @@
-package online.ltsoft.cnrdsreport.config;
+package online.ltsoft.common.config;
 
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;

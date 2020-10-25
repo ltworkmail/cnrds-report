@@ -1,4 +1,4 @@
-package online.ltsoft.cnrdsreport;
+package online.ltsoft;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

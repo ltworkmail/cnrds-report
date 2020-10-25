@@ -14,3 +14,6 @@ spring:
         publisher-confirm-type: correlated
         #确认消息已发送到队列(Queue)
         publisher-returns: true
+
+#swagger是否开启
+swagger.enabled: true

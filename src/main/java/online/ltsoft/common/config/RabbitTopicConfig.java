@@ -1,6 +1,9 @@
-package online.ltsoft.cnrdsreport.config;
+package online.ltsoft.common.config;
 
-import org.springframework.amqp.core.*;
+import org.springframework.amqp.core.Binding;
+import org.springframework.amqp.core.BindingBuilder;
+import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.core.TopicExchange;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -21,7 +24,7 @@ public class RabbitTopicConfig {
          * durable：是否持久化,默认是false；持久化队列:会被存储在磁盘上,当消息代理重启时仍然存在
          * exclusive：是否只能被当前创建的连接使用,默认是false；而且当连接关闭后队列即被删除,此参考优先级高于durable
          * autoDelete：是否自动删除,默认是false；当没有生产者或者消费者使用此队列，该队列会自动删除
-         * return new Queue("TestDirectQueue",true,true,false)*/
+         * return new Queue("report.patientinfo",true,true,false)*/
         return new Queue(RabbitTopicConfig.PATIENTINFO, true);
     }
 
@@ -31,7 +34,7 @@ public class RabbitTopicConfig {
          * durable：是否持久化,默认是false；持久化队列:会被存储在磁盘上,当消息代理重启时仍然存在
          * exclusive：是否只能被当前创建的连接使用,默认是false；而且当连接关闭后队列即被删除,此参考优先级高于durable
          * autoDelete：是否自动删除,默认是false；当没有生产者或者消费者使用此队列，该队列会自动删除
-         * return new Queue("TestDirectQueue",true,true,false)*/
+         * return new Queue("report.results",true,true,false)*/
         return new Queue(RabbitTopicConfig.RESULTS, true);
     }
 

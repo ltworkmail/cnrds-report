@@ -37,13 +37,13 @@ public class RabbitTopicConfig {
 
     @Bean
     Binding bindingFirstExchange() {
-        /*队列和交换机绑定：设置用于匹配键名TestDirectRouting*/
-        return BindingBuilder.bind(firstQueue()).to(exchange()).with(PATIENTINFO);
+        /*队列和交换机绑定：设置用于匹配键名report.patientinfo*/
+        return BindingBuilder.bind(firstQueue()).to(exchange()).with(RabbitTopicConfig.PATIENTINFO);
     }
 
     @Bean
     Binding bindingSecondExchange() {
-        /*队列和交换机绑定：设置用于匹配键名TestDirectRouting*/
-        return BindingBuilder.bind(secondQueue()).to(exchange()).with(RESULTS);
+        /*队列和交换机绑定：设置用于匹配键名report.results*/
+        return BindingBuilder.bind(secondQueue()).to(exchange()).with(RabbitTopicConfig.RESULTS);
     }
 }

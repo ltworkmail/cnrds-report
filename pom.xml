@@ -10,7 +10,7 @@
     </parent>
     <groupId>online.ltsoft</groupId>
     <artifactId>cnrds-report</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>10.0.1-SNAPSHOT</version>
     <name>cnrds-report</name>
     <description>cnrds-report</description>
 
@@ -42,7 +42,7 @@
         <dependency>
             <groupId>online.ltsoft</groupId>
             <artifactId>lotus-core</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>10.0.1-SNAPSHOT</version>
         </dependency>
         <!-- 工具类 -->
         <dependency>

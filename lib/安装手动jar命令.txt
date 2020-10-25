@@ -1,1 +1,1 @@
-mvn install:install-file -DgroupId=online.ltsoft -DartifactId=lotus-core -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -Dfile=lotus-core.jar
+mvn install:install-file -DgroupId=online.ltsoft -DartifactId=lotus-core -Dversion=10.0.1-SNAPSHOT -Dpackaging=jar -Dfile=lotus-core.jar
